@@ -12,12 +12,28 @@ body {
 
 .taskbar {
     background-color: #f3f3f3;
-    width: 150%;
+    width: 100%;
     position: absolute;
     bottom: 0;
     display: flex;
     z-index: 110;
     justify-content: center;
+}
+
+.startmenu {
+    position: absolute;
+    /*when we open the start menu bottom */
+    bottom: 50px;
+    /* when it is inside start menu */
+    bottom: -650px;
+    width: 100%;
+    text-align: center;
+    /* ADDED TRANSITION */
+    transition: all 0.3s ease-in;
+}
+
+.startmenu img {
+    border-radius: 8px;
 }
 
 .right {
